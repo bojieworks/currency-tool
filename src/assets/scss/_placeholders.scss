@@ -1,0 +1,33 @@
+$gray-100: #fafafa;
+$gray-200: #e0e0e0;
+$gray-300: #ccc;
+$error-400: #ff4d4f;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+
+@mixin display-sm {
+  font-size: 1.875rem; //30px
+  line-height: 2.375rem; //38px
+}
+
+@mixin text-lg {
+  font-size: 1.125rem; //18px
+  line-height: 1.75rem; //28px
+}
+
+@mixin text-md {
+  font-size: 1rem; //16px
+  line-height: 1.5rem; //24px
+}
+
+@mixin text-sm {
+  font-size: 0.875rem; //14px
+  line-height: 1.25rem; //20px
+}
+
+@mixin text-xs {
+  font-size: 0.75rem; //12px
+  line-height: 1.125rem; //18px
+}

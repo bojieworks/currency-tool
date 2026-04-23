@@ -1,0 +1,42 @@
+@import "../../assets/scss/_placeholders.scss";
+
+.result-panel {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid $gray-200;
+  border-radius: 8px;
+  background-color: $gray-100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 8px;
+
+  &__currency {
+    @include text-sm;
+    font-weight: $font-weight-medium;
+    padding-bottom: 6px;
+  }
+
+  &__rates {
+    @include text-xs;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__value {
+    @include text-lg;
+    font-weight: $font-weight-medium;
+  }
+
+  &__loading,
+  &__error {
+    @include text-sm;
+    margin-top: 8px;
+  }
+
+  &__error {
+    color: $error-400;
+  }
+}

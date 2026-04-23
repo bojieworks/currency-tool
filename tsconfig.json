@@ -1,0 +1,19 @@
+{
+    "include": [
+        "./src/**/*"
+    ],
+    "compilerOptions": {
+      "types": ["node"],
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "strict": true,
+        "esModuleInterop": true,
+        "lib": [
+            "dom",
+            "es2018"
+        ],
+        "jsx": "react-jsx"
+    }
+}

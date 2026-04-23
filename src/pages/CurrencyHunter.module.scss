@@ -1,0 +1,35 @@
+@import "../assets/scss/_placeholders.scss";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $gray-300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currency-hunter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 40px 30px;
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid $gray-200;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+
+  &__title {
+    @include display-sm;
+
+    text-align: center;
+    font-weight: $font-weight-medium;
+  }
+}
+
+.amount-input__field {
+  width: 100%;
+}

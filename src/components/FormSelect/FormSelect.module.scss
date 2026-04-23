@@ -1,0 +1,30 @@
+@import "../../assets/scss/_placeholders.scss";
+
+.form-select {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__label {
+    @include text-sm;
+    font-weight: $font-weight-medium;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__error {
+    @include text-xs;
+    color: $error-400;
+    margin-top: 4px;
+  }
+}
